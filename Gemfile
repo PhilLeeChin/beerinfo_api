@@ -5,3 +5,4 @@ gemspec
 
 gem "rake", "~> 12.0"
 gem 'dotenv-rails'
+gem 'httparty', '~> 0.13.7'

@@ -7,7 +7,7 @@ class CLI
   def welcome_message
     puts "**************************************************"
     puts "**************************************************"
-    puts "*****      Welcome to my game info app       *****"
+    puts "*****      Welcome to my beer info app       *****"
     sleep(2)
     puts "*****   Select from 1 of the options below   *****"
     puts "**************************************************"

@@ -1,3 +1,5 @@
 #!/usr/local/bin/ruby
+#connects to the environment file in the config file
+require_relative "../config/environment"
 
-require_relative "../lib/gameapi_info/version"
+CLI.

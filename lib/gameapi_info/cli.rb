@@ -101,6 +101,7 @@ class CLI
   #this method calls on the display_beers, beer_choices, and the get_input
   #methods to create a clear flow od itteration for the app
   def beer_selection
+    self.welcome
     self.display_beers
     self.beer_choices
     self.get_input

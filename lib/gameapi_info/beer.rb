@@ -1,11 +1,12 @@
-#This class initialize with 4 variables to store the data obtain from the API
+#This class initialize with 5 objects
 class Beer
-  #this attributes reads from the information
+  #these attributes reads from the information
   attr_reader :name, :tagline, :brew_date, :description, :abv
 
   #class variable to store the data in a hash
   @@all = []
 
+  #initialize the Beer class with 5 initial data values, and a class variable
   def initialize(name, tagline, brew_date, description, abv)
     @name = name
     @tagline = tagline
@@ -15,7 +16,7 @@ class Beer
     @@all << self
   end
 
-  #returns all data
+  #instance method that returns all data in the class variable
   def self.all
     @@all
   end

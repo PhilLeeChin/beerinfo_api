@@ -3,5 +3,5 @@
 #connects to the environment file in the config file
 require_relative "../config/environment"
 
-#calls on the CLI class, creating an new instance with the open instance method
+#calls on the CLI class, creats a new instance, that calls on the open instance method
 CLI.new.open

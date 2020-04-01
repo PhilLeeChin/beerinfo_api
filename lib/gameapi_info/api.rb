@@ -9,7 +9,7 @@ class API
     #itterates through the data stored in response for each beer
     response.each do |beer|
       #assigns a new Beer class with the name of the beer, tagline, first_brewed, and the description
-      new_beer = Beer.new(beer['name'], beer['tagline'], beer['first_brewed'], beer['description'])
+      new_beer = Beer.new(beer['name'], beer['tagline'], beer['first_brewed'], beer['description'], beer['abv'])
       #binding.pry
     end
   end

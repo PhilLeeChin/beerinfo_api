@@ -8,7 +8,8 @@ class API
     response = HTTParty.get('https://api.punkapi.com/v2/beers/?page=1&per_page=15')
     #itterates through the data stored in response for each beer
     response.each do |beer|
-      #assigns a new Beer class with the name of the beer, tagline, first_brewed, and the description
+      #creates a new Beer class with the name of the beer, tagline, first_brewed, and the description
+      #assigns the new instance of the Beer to the new_beer variable
       new_beer = Beer.new(beer['name'], beer['tagline'], beer['first_brewed'], beer['description'], beer['abv'])
       #binding.pry
     end

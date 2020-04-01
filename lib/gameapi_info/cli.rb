@@ -48,7 +48,9 @@ class CLI
     puts "Label: " + @beer.name
     puts "Tagline: " + @beer.tagline
     puts "Month and Year 1st Brewed: " + @beer.brew_date
-    puts "Info: " + @beer.description + "\n"
+    puts "Info: " + @beer.description
+    puts "Alcohol level: " + @beer.abv.to_s + "%"
+    #binding.pry
     puts "--------------------------------------------------"
     puts "**************************************************"
   end
@@ -101,7 +103,7 @@ class CLI
   #this method calls on the display_beers, beer_choices, and the get_input
   #methods to create a clear flow od itteration for the app
   def beer_selection
-    self.welcome
+    self.welcome_message
     self.display_beers
     self.beer_choices
     self.get_input

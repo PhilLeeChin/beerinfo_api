@@ -1,8 +1,6 @@
 # GameapiInfo
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/gameapi_info`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Welcome to Beer Info, this app will give you more details on specific types of beers. By selecting a number from the listings, the app returns data such as the beer label, it's tagline, first brewed date (the month and year), the description, and the Alcohol level.
 
 ## Installation
 
@@ -22,7 +20,9 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+1.run bin/open.rb to start app
+2.select a number from the numbered list
+3.to choose another beer type 'back', or to exit type 'exit'
 
 ## Development
 

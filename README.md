@@ -22,7 +22,7 @@ Or install it yourself as:
 
 1.run bin/open.rb to start app
 2.select a number from the numbered list
-3.to choose another beer type 'back', or to exit type 'exit'
+3.to choose another beer, type 'back', or to close the app type 'exit'
 
 ## Development
 

@@ -72,6 +72,9 @@ class CLI
       self.display_details
     else
       puts "Invalid input, please input a number from the list"
+      puts " "
+      sleep(1)
+      self.display_beers
       self.beer_choices
     end
   end

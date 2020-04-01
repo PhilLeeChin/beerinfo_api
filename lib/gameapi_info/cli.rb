@@ -1,5 +1,6 @@
 #Welcome to My CLI portion of my project, this part deals with the interaction of the users
 #It is comprised of Instance methods
+#calling on the objects created in the Beer class
 class CLI
   #This method calls on on other methods, the bin/open.rb file calls on this method
   def open
@@ -10,7 +11,7 @@ class CLI
     self.beer_selection
   end
 
-  #Creates a welcome screen for the users
+  #Creates a welcome screen for users
   def welcome_message
     puts "**************************************************"
     puts "**************************************************"
@@ -24,9 +25,8 @@ class CLI
   end
 
   def beer_options
-    #returns the listing based on the request
-    API.get_listings
-    self.display_beers
+    API.get_listings #returns the listing based on the request from the API
+    self.display_beers #calls on the disp method to return the list of beers
   end
 
   def display_beers
@@ -55,16 +55,20 @@ class CLI
     puts "**************************************************"
   end
 
-  def beer_choices
+  def beer_choices #instance method
     #takes user input and it converts to interger to match with index
     #if the user inputs a number that is not apart of the list or a letter it will ask the user to try again
     puts "Please select the number of your desired beer? "
     puts "--------------------------------------------------"
+    #gets takes in the user_input, chomp removes the newline character, to_i turns the input into an interger
     user_input = gets.chomp.to_i
     puts "--------------------------------------------------"
     puts "**************************************************"
     system('clear')#clears the screen so that it does not get clustered with the return
+    #condition to check if the user_input is greater than 0
+    #and if it is less than 16
     if user_input > 0 && user_input < 16
+      #calls on the class variable from the Beer class and assigns it to an instance variable
       @beer = Beer.all[user_input - 1]
       self.display_details
     else
@@ -81,6 +85,7 @@ class CLI
     puts "If you would like to make another selection input 'back'."
     puts "If you would like to close the app input 'exit'."
     puts "--------------------------------------------------"
+    #gets takes in the user_input, chomp removes the newline character, downcase turns all upperase input into lowercase
     user_input = gets.chomp.downcase
     puts "--------------------------------------------------"
     puts "**************************************************"

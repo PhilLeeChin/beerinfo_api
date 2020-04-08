@@ -1,7 +1,7 @@
-require_relative 'lib/gameapi_info/version'
+require_relative 'lib/beerinfo_api/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "gameapi_info"
+  spec.name          = "beerinfo_api"
   spec.version       = GameapiInfo::VERSION
   spec.authors       = ["PhilLeeChin"]
   spec.email         = ["phil.leechin@outlook.com"]

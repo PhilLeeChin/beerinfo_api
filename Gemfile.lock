@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    gameapi_info (0.1.0)
+    beerinfo_api (0.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -69,7 +69,7 @@ PLATFORMS
 
 DEPENDENCIES
   dotenv-rails
-  gameapi_info!
+  beerinfo_api!
   rake (~> 12.0)
 
 BUNDLED WITH

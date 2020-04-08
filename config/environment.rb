@@ -1,4 +1,4 @@
-require 'httparty'
+require 'httparty' #gem file to grab the api
 require 'pry'
 
 #relative file inside the app

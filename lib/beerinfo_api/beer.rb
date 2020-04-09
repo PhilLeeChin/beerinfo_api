@@ -21,4 +21,7 @@ class Beer
     @@all
   end
 
+  def self.strong_beers
+    all.select {|s_beer| s_beer.abv > 5}
+  end
 end

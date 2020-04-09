@@ -25,6 +25,7 @@ class CLI
 
   def beer_options
     API.get_listings #returns the listing based on the request from the API
+    binding.pry
     self.display_beers #calls on the disp method to return the list of beers
   end
 
